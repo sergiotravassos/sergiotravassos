@@ -24,3 +24,5 @@ Hello I'm Sergio Travassos
   <img align="center" alt="HTML" height="60" width="80" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
   <img align="center" alt="CSS" height="60" width="80" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
 </div>
+
+![snake gif](https://github.com/sergiotravassos/sergiotravassos/blob/output/github-contribution-grid-snake.svg)

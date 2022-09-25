@@ -1,7 +1,7 @@
 <h2 align="center">
 <img src="https://media.giphy.com/media/9KawrQzIwdAYg/giphy.gif" width="30"/> Hello I'm Sergio Travassos <img src="https://media.giphy.com/media/nEZQWs1o1Zh9C/giphy.gif" width="40"/></h2>
 <div>
-<p><a href="https://github.com/sergiotravassos"> <img style="float: right;" src="https://raw.githubusercontent.com/gist/sergiotravassos/7c62c35bec297539776773ca4ccf1396/raw/5d136d4ed5f6fdac8dfdccfd2976989cb9844666/githubcard.svg" height="480em" align="right" /> <img style="float: left;" src="https://github-readme-stats.vercel.app/api?username=sergiotravassos&amp;show_icons=true&amp;theme=codeSTACKr&amp;include_all_commits=true&amp;count_private=true" height="200em" /> <img style="float: left;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sergiotravassos&amp;layout=compact&amp;langs_count=7&amp;theme=codeSTACKr" width="510" height="200" /></a></p>
+<p><a href="https://github.com/sergiotravassos"> <img style="float: right;" src="https://raw.githubusercontent.com/gist/sergiotravassos/7c62c35bec297539776773ca4ccf1396/raw/5d136d4ed5f6fdac8dfdccfd2976989cb9844666/githubcard.svg" height="420em" align="right" /> <img style="float: left;" src="https://github-readme-stats.vercel.app/api?username=sergiotravassos&amp;show_icons=true&amp;theme=codeSTACKr&amp;include_all_commits=true&amp;count_private=true" height="200em" /> <img style="float: left;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sergiotravassos&amp;layout=compact&amp;langs_count=7&amp;theme=codeSTACKr" width="510" height="200" /></a></p>
 
 ##
 

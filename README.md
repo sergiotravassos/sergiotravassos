@@ -35,7 +35,7 @@
 ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)&nbsp;
 ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)&nbsp;
 ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)&nbsp;
-![snake gif](https://github.com/sergiotravassos/sergiotravassos/blob/output/github-contribution-grid-snake.svg)
+![snake](https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/github-contribution-grid-snake.svg)
 
 ##
 

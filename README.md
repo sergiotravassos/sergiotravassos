@@ -1,17 +1,9 @@
-<h1 align="center">Sérgio Travassos</h1>
-
 <p align="center">
-  <b>Principal Engineer</b> · Timestamp · Lisboa, Portugal<br>
-  Mais de 10 anos em Java. Desenho e ponho de pé arquiteturas de microserviços
-  para sistemas de muita carga — Java, Quarkus, Kafka e OpenShift —<br>
-  e lidero as equipas que as constroem.<br>
-  Agora a puxar um projeto em Python que junta LLM a OpenSearch e Cassandra.
+  <img alt="Sérgio Travassos — Principal Engineer na Timestamp, Lisboa. Java, Quarkus, Kafka, OpenShift, Kubernetes, LLM."
+       src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/banner.svg"/>
 </p>
 
 <p align="center">
-  <img height="270" alt="Sérgio Travassos — Java Integration Consultant"
-       src="https://raw.githubusercontent.com/gist/sergiotravassos/7c62c35bec297539776773ca4ccf1396/raw/5d136d4ed5f6fdac8dfdccfd2976989cb9844666/githubcard.svg"/>
-  &nbsp;&nbsp;
   <picture>
     <source media="(prefers-color-scheme: dark)"
             srcset="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/linguagens-escuro.svg">

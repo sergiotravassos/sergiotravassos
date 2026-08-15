@@ -55,6 +55,9 @@ jobs:
       # Aqui não há servidor a que chamar quando alguém abre o perfil:
       # o SVG é um ficheiro deste repositório. Se a geração falhar,
       # falha aqui, à vista, e o perfil mostra o cartão de ontem.
+      - name: Desenhar o cabeçalho
+        run: node .github/scripts/gerar-banner.mjs dist
+
       - name: Gerar o cartão das linguagens
         run: node .github/scripts/gerar-cartoes.mjs "${{ github.repository_owner }}" dist
         env:

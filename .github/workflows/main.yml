@@ -58,6 +58,9 @@ jobs:
       - name: Desenhar o cabeçalho
         run: node .github/scripts/gerar-banner.mjs dist
 
+      - name: Desenhar os títulos e os cartões de projeto
+        run: node .github/scripts/gerar-miolo.mjs dist
+
       - name: Gerar o cartão das linguagens
         run: node .github/scripts/gerar-cartoes.mjs "${{ github.repository_owner }}" dist
         env:

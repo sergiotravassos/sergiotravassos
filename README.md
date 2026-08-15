@@ -14,26 +14,23 @@
 
 ---
 
-### 🚀 O que ando a construir
+<img alt="O que ando a construir" src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/titulo-projetos.svg"/>
 
-**[esposasliterarias.com](https://esposasliterarias.com)** — site de um clube de leitura, no ar.
-Página única **sem build**: HTML, CSS e JavaScript puro, copiados tal e qual para produção.
-Publica-se sozinho na Cloudflare a cada *push*, e só sobe se passar em quatro conferências —
-referências que resolvem, lógica do backend, o pacote montado, e o layout num motor WebKit.
-Ficha de ingresso com Turnstile e Google Apps Script.
-
-**[dotfiles](https://github.com/sergiotravassos/dotfiles)** — a máquina de trabalho, versionada.
-
-**Red Hat** — [AD221](https://github.com/sergiotravassos/AD221-apps) *Cloud-native Integration
-with Red Hat Fuse*, [DO288](https://github.com/sergiotravassos/DO288-apps) e
-[DO180](https://github.com/sergiotravassos/DO180-apps) *OpenShift*.
+<p align="center">
+  <a href="https://esposasliterarias.com" target="_blank"><img
+     alt="esposasliterarias.com — site de um clube de leitura, no ar" src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/projeto-esposas.svg"/></a>
+  <a href="https://github.com/sergiotravassos/dotfiles"><img
+     alt="dotfiles — a máquina de trabalho, versionada" src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/projeto-dotfiles.svg"/></a>
+  <a href="https://github.com/sergiotravassos/AD221-apps"><img
+     alt="Red Hat AD221, DO288 e DO180 — integração cloud-native e OpenShift" src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/projeto-redhat.svg"/></a>
+</p>
 
 > O grosso do que construo é arquitetura de microserviços para sistemas internos, e vive em
 > GitLab fechado. O que está aqui é o que posso mostrar.
 
 ---
 
-### 🎓 Certificações
+<img alt="Certificações" src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/titulo-certificacoes.svg"/>
 
 ![Red Hat](https://img.shields.io/badge/Red%20Hat-EE0000?style=for-the-badge&logo=redhat&logoColor=white)&nbsp;
 **Certified Specialist in API Management** — 2024, válida até 2027
@@ -45,7 +42,7 @@ Também: *Cloud Fundamentals, Administration and Solution Architect* (FIAP) e *J
 
 ---
 
-### 🛠 Stack
+<img alt="Stack" src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/titulo-stack.svg"/>
 
 **Linguagens e front**
 
@@ -111,7 +108,7 @@ Também: *Cloud Fundamentals, Administration and Solution Architect* (FIAP) e *J
 
 ---
 
-### 📫 Onde me encontrar
+<img alt="Onde me encontrar" src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/titulo-contacto.svg"/>
 
 <p align="left">
   <a href="https://www.linkedin.com/in/sergiotfigueiredo/" target="_blank">

@@ -1,9 +1,11 @@
 <h1 align="center">Sérgio Travassos</h1>
 
 <p align="center">
-  <b>Java Integration Consultant</b> · Portugal<br>
-  Mais de 10 anos em Java e arquitetura de microserviços.<br>
-  Serviços de backend em Quarkus e Spring, e a plataforma em Kubernetes e OpenShift que os põe de pé.
+  <b>Principal Engineer</b> · Timestamp · Lisboa, Portugal<br>
+  Mais de 10 anos em Java. Desenho e ponho de pé arquiteturas de microserviços
+  para sistemas de muita carga — Java, Quarkus, Kafka e OpenShift —<br>
+  e lidero as equipas que as constroem.<br>
+  Agora a puxar um projeto em Python que junta LLM a OpenSearch e Cassandra.
 </p>
 
 <p align="center">
@@ -34,8 +36,20 @@ Ficha de ingresso com Turnstile e Google Apps Script.
 with Red Hat Fuse*, [DO288](https://github.com/sergiotravassos/DO288-apps) e
 [DO180](https://github.com/sergiotravassos/DO180-apps) *OpenShift*.
 
-> O grosso do que construo é integração Java para sistemas internos, e vive em GitLab fechado.
-> O que está aqui é o que posso mostrar.
+> O grosso do que construo é arquitetura de microserviços para sistemas internos, e vive em
+> GitLab fechado. O que está aqui é o que posso mostrar.
+
+---
+
+### 🎓 Certificações
+
+![Red Hat](https://img.shields.io/badge/Red%20Hat-EE0000?style=for-the-badge&logo=redhat&logoColor=white)&nbsp;
+**Certified Specialist in API Management** — 2024, válida até 2027
+
+![Anthropic](https://img.shields.io/badge/Anthropic-191919?style=for-the-badge&logo=anthropic&logoColor=white)&nbsp;
+**AI Fluency Framework & Foundations** · **Claude 101** · **Claude Code in Action** — 2026
+
+Também: *Cloud Fundamentals, Administration and Solution Architect* (FIAP) e *Java Spring* (DevSuperior).
 
 ---
 
@@ -44,19 +58,23 @@ with Red Hat Fuse*, [DO288](https://github.com/sergiotravassos/DO288-apps) e
 **Linguagens e front**
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)&nbsp;
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)&nbsp;
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)&nbsp;
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)&nbsp;
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)&nbsp;
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-**Backend**
+**Backend e integração**
 
 ![Quarkus](https://img.shields.io/badge/Quarkus-4695EB?style=for-the-badge&logo=quarkus&logoColor=white)&nbsp;
-![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
+![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)&nbsp;
+![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-000?style=for-the-badge&logo=apachekafka&logoColor=white)
 
 **Dados**
 
 ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)&nbsp;
+![Cassandra](https://img.shields.io/badge/Cassandra-1287B1?style=for-the-badge&logo=apachecassandra&logoColor=white)&nbsp;
+![OpenSearch](https://img.shields.io/badge/OpenSearch-005EB8?style=for-the-badge&logo=opensearch&logoColor=white)&nbsp;
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)&nbsp;
 ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)&nbsp;
 ![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white)&nbsp;

@@ -119,7 +119,10 @@ const TEMAS = {
   escuro: { fundo: '#0d1117', borda: '#30363d', titulo: '#e6edf3', texto: '#8b949e', trilho: '#21262d' },
 };
 
-const L = 480;          // largura
+/* 900 e não 480: todas as secções do README têm esta largura, e uma
+   caixa mais estreita no meio de painéis de 900 lê-se como coisa solta,
+   não como desenho. */
+const L = 900;          // largura
 const M = 25;           // margem
 const BARRA_Y = 74;
 const BARRA_H = 10;
@@ -147,7 +150,7 @@ function cartao(tema) {
   /* Legenda em duas colunas. Colunas fixas e não centradas: com
      larguras variáveis os pontos coloridos ficavam desalinhados entre
      as linhas, e é o alinhamento deles que faz a lista ler-se. */
-  const COLS = 2;
+  const COLS = 3;
   const largCol = UTIL / COLS;
   const legenda = linhas.map(([nome, v], i) => {
     const cx = (i % COLS) * largCol;

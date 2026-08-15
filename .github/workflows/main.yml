@@ -61,6 +61,9 @@ jobs:
       - name: Desenhar os títulos e os cartões de projeto
         run: node .github/scripts/gerar-miolo.mjs dist
 
+      - name: Desenhar a stack
+        run: node .github/scripts/gerar-stack.mjs dist
+
       - name: Gerar o cartão das linguagens
         run: node .github/scripts/gerar-cartoes.mjs "${{ github.repository_owner }}" dist
         env:

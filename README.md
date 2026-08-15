@@ -1,8 +1,9 @@
 <h1 align="center">Sérgio Travassos</h1>
 
 <p align="center">
-  <b>Java Integration Consultant</b><br>
-  Serviços de backend em Java e Quarkus, e a plataforma em Kubernetes e OpenShift que os põe de pé.
+  <b>Java Integration Consultant</b> · Portugal<br>
+  Mais de 10 anos em Java e arquitetura de microserviços.<br>
+  Serviços de backend em Quarkus e Spring, e a plataforma em Kubernetes e OpenShift que os põe de pé.
 </p>
 
 <p align="center">
@@ -103,8 +104,8 @@ with Red Hat Fuse*, [DO288](https://github.com/sergiotravassos/DO288-apps) e
 ### 📫 Onde me encontrar
 
 <p align="left">
-  <a href="https://www.linkedin.com/in/stravassos/" target="_blank">
-    <img alt="LinkedIn" src="https://img.shields.io/badge/-stravassos-05122A?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  <a href="https://www.linkedin.com/in/sergiotfigueiredo/" target="_blank">
+    <img alt="LinkedIn" src="https://img.shields.io/badge/-sergiotfigueiredo-05122A?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
   <a href="https://twitter.com/sergiortf" target="_blank">
     <img alt="X" src="https://img.shields.io/badge/-sergiortf-05122A?style=for-the-badge&logo=x&logoColor=white"/>

@@ -40,21 +40,11 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      # ── a cobrinha ──
-      # Duas versões, clara e escura: o README escolhe com <picture>,
-      # senão metade das pessoas vê o gráfico apagado sobre o tema
-      # errado. O .gif que aqui era gerado saiu — nascia a cada
-      # execução e o README nunca o usou.
-      - name: Desenhar a cobrinha
-        uses: Platane/snk@v3.5.0
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/snake-claro.svg?palette=github-light
-            dist/snake-escuro.svg?palette=github-dark
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+      # ⚠️ Os cartões ANTES da cobrinha, e não ao contrário.
+      # A action da cobrinha corre em Docker como root e cria o dist/
+      # com dono root; o passo seguinte corre como runner e levava com
+      # "EACCES: permission denied". Assim o dist/ nasce do runner e o
+      # root escreve lá dentro sem problema — o inverso é que não dá.
       # ── o cartão das linguagens ──
       # Substitui os dois cartões que vinham de um fork do
       # github-readme-stats num Vercel de terceiros. Esse ficou sem
@@ -67,6 +57,21 @@ jobs:
       # falha aqui, à vista, e o perfil mostra o cartão de ontem.
       - name: Gerar o cartão das linguagens
         run: node .github/scripts/gerar-cartoes.mjs "${{ github.repository_owner }}" dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── a cobrinha ──
+      # Duas versões, clara e escura: o README escolhe com <picture>,
+      # senão metade das pessoas vê o gráfico apagado sobre o tema
+      # errado. O .gif que aqui era gerado saiu — nascia a cada
+      # execução e o README nunca o usou.
+      - name: Desenhar a cobrinha
+        uses: Platane/snk@v3.5.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-claro.svg?palette=github-light
+            dist/snake-escuro.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

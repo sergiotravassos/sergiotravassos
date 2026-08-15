@@ -239,6 +239,53 @@ ${CERTS.map((c, i) => {
 </svg>
 `;
 
+
+/* ── contactos ───────────────────────────────────────────────
+   Três ficheiros e não um, ao contrário do resto: aqui o link É o
+   ponto. Um <a> dentro de um SVG não funciona quando o SVG entra por
+   <img>, portanto uma imagem só matava os três destinos. São pequenos
+   e cabem lado a lado mesmo num telemóvel.
+
+   O LinkedIn fica sem logótipo. Não é esquecimento: a marca foi
+   retirada do simple-icons a pedido da própria LinkedIn, e o shields
+   também já não a serve — o badge antigo deste README já aparecia sem
+   ícone. Desenhá-la à mão era fazer o que eles pediram para não se
+   fazer. O rótulo escrito chega. */
+
+const CONTACTOS = [
+  { ficheiro: 'contacto-linkedin',  chave: 'LinkedIn',  texto: 'sergiotfigueiredo' },
+  { ficheiro: 'contacto-x',         chave: 'X',         texto: 'sergiortf' },
+  { ficheiro: 'contacto-instagram', chave: 'Instagram', texto: 'sergiotravassos' },
+];
+
+function contacto(c) {
+  const d = ICONES[c.chave];
+  /* Sem isto, uma chave em falta rebentava com um TypeError a apontar
+     para dentro do desenho, e não para a causa. */
+  if (!d) { console.error(`Falta "${c.chave}" no icones.json.`); process.exit(1); }
+  const A = 36;
+  const temIcone = Boolean(d.path);
+  const ICO = 16;
+  const rotulo = `${c.chave} · ${c.texto}`;
+  const Lc = Math.round(14 + (temIcone ? ICO + 8 : 0) + rotulo.length * 6.9 + 14);
+  const [vx, vy, vw, vh] = d.vb.split(/\s+/).map(Number);
+  const e = ICO / Math.max(vw, vh);
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${Lc}" height="${A}"
+     viewBox="0 0 ${Lc} ${A}" role="img" aria-label="${esc(rotulo)}">
+  <title>${esc(rotulo)}</title>
+  <rect width="${Lc}" height="${A}" rx="8" fill="${PAINEL}"/>
+  <rect x="0.5" y="0.5" width="${Lc - 1}" height="${A - 1}" rx="8"
+        fill="none" stroke="${d.cor}" stroke-opacity="0.45"/>
+  ${temIcone ? `<g transform="translate(14,${(A - ICO) / 2}) scale(${e.toFixed(4)}) translate(${-vx},${-vy})">
+    <path d="${d.path}" fill="${d.cor}"/>
+  </g>` : ''}
+  <text x="${14 + (temIcone ? ICO + 8 : 0)}" y="${A / 2 + 4.5}" font-size="12.5" font-weight="600"
+        font-family="${LETRA}" fill="#FFFFFF">${esc(rotulo)}</text>
+</svg>
+`;
+}
+
 /* ── escrever ────────────────────────────────────────────────── */
 await mkdir(SAIDA, { recursive: true });
 for (const [nome, texto] of TITULOS) {
@@ -246,6 +293,10 @@ for (const [nome, texto] of TITULOS) {
 }
 await writeFile(`${SAIDA}/projetos.svg`, projetos, 'utf8');
 await writeFile(`${SAIDA}/certificacoes.svg`, certs, 'utf8');
+for (const c of CONTACTOS) {
+  await writeFile(`${SAIDA}/${c.ficheiro}.svg`, contacto(c), 'utf8');
+}
 console.log(`  ${TITULOS.length} títulos`);
 console.log(`  ${SAIDA}/projetos.svg       ${L}x${AC}`);
 console.log(`  ${SAIDA}/certificacoes.svg  ${L}x${ACERT}`);
+console.log(`  ${CONTACTOS.length} contactos`);

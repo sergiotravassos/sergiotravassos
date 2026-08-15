@@ -53,14 +53,9 @@
 
 <img alt="Onde me encontrar" src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/titulo-contacto.svg"/>
 
-<p align="left">
-  <a href="https://www.linkedin.com/in/sergiotfigueiredo/" target="_blank">
-    <img alt="LinkedIn" src="https://img.shields.io/badge/-sergiotfigueiredo-05122A?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-  <a href="https://twitter.com/sergiortf" target="_blank">
-    <img alt="X" src="https://img.shields.io/badge/-sergiortf-05122A?style=for-the-badge&logo=x&logoColor=white"/>
-  </a>
-  <a href="https://www.instagram.com/sergiotravassos/" target="_blank">
-    <img alt="Instagram" src="https://img.shields.io/badge/-sergiotravassos-05122A?style=for-the-badge&logo=instagram&logoColor=white"/>
-  </a>
-</p>
+<a href="https://www.linkedin.com/in/sergiotfigueiredo/" target="_blank"><img
+   alt="LinkedIn — sergiotfigueiredo" src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/contacto-linkedin.svg"/></a>
+<a href="https://twitter.com/sergiortf" target="_blank"><img
+   alt="X — sergiortf" src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/contacto-x.svg"/></a>
+<a href="https://www.instagram.com/sergiotravassos/" target="_blank"><img
+   alt="Instagram — sergiotravassos" src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/contacto-instagram.svg"/></a>

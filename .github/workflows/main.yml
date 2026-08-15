@@ -1,39 +1,136 @@
-name: Snake Game
+# ═══════════════════════════════════════════════════════════════
+#  PERFIL — o que se actualiza sozinho, uma vez por dia
+#
+#    cobrinha    redesenha o gráfico de contribuições
+#    linguagens  gera o cartão a partir da API, sem servidor nenhum
+#    conferir    lê as imagens do README e avisa se alguma é um erro
+#
+#  Tudo num job só, de propósito: os três passos escrevem para o mesmo
+#  dist/ e sobem num commit. Dois jobs seriam dois minutos faturados
+#  em vez de um — e o GitHub arredonda cada job para o minuto acima.
+#
+#  Repositório público, portanto os minutos não descontam da franquia.
+#  Mesmo assim: era 5x/dia (cron "0 */5 * * *", às 00, 05, 10, 15 e 20
+#  UTC) e o gráfico de contribuições não muda cinco vezes ao dia.
+# ═══════════════════════════════════════════════════════════════
+name: Perfil
 
 on:
   schedule:
-    - cron: "0 */5 * * *"
+    # 04:17 UTC: madrugada em Lisboa, fim de noite em Brasília — o
+    # cartão do dia anterior fica pronto antes de alguém abrir o perfil.
+    # Minuto 17 e não 0 porque à hora cheia a fila de agendados do
+    # GitHub é maior e os atrasos também.
+    - cron: "17 4 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: snake-game
+  group: perfil
   cancel-in-progress: true
 
 jobs:
-  build:
+  perfil:
+    # Um fork não deve gastar execuções nem tentar escrever no branch.
+    if: github.repository_owner == 'sergiotravassos'
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout (default branch)
-        uses: actions/checkout@v4
 
-      - name: Generate snake
-        uses: Platane/snk@v3.4.1
+    steps:
+      - uses: actions/checkout@v7
+
+      # ── a cobrinha ──
+      # Duas versões, clara e escura: o README escolhe com <picture>,
+      # senão metade das pessoas vê o gráfico apagado sobre o tema
+      # errado. O .gif que aqui era gerado saiu — nascia a cada
+      # execução e o README nunca o usou.
+      - name: Desenhar a cobrinha
+        uses: Platane/snk@v3.5.0
         with:
-          github_user_name: sergiotravassos
+          github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake.gif
+            dist/snake-claro.svg?palette=github-light
+            dist/snake-escuro.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Deploy to output branch
-        uses: crazy-max/ghaction-github-pages@v4
+      # ── o cartão das linguagens ──
+      # Substitui os dois cartões que vinham de um fork do
+      # github-readme-stats num Vercel de terceiros. Esse ficou sem
+      # token, bateu no limite da API e passou a devolver "Something
+      # went wrong! Maximum retries exceeded" — com HTTP 200, portanto
+      # sem nada a avisar. Esteve assim no perfil durante meses.
+      #
+      # Aqui não há servidor a que chamar quando alguém abre o perfil:
+      # o SVG é um ficheiro deste repositório. Se a geração falhar,
+      # falha aqui, à vista, e o perfil mostra o cartão de ontem.
+      - name: Gerar o cartão das linguagens
+        run: node .github/scripts/gerar-cartoes.mjs "${{ github.repository_owner }}" dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publicar no branch output
+        uses: crazy-max/ghaction-github-pages@v5
         with:
           target_branch: output
           build_dir: dist
-          commit_message: "chore: update snake"
+          commit_message: "chore: cartões do dia"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── as imagens do README ──
+      # Isto existe por causa do defeito acima: conferir o código de
+      # estado não apanhava nada, porque o cartão partido respondia
+      # 200. É preciso ler o CORPO. Conferir só o 200 é conferir nada.
+      #
+      # Não é portão: os ficheiros já subiram, e o que aqui falha é
+      # quase sempre coisa de fora (um badge, um GIF de outro
+      # repositório). Serve para tu saberes no dia, e não meses depois.
+      - name: Conferir que nenhuma imagem do README é uma caixa de erro
+        run: |
+          set -uo pipefail
+          falhas=0
+
+          # Só imagens: o que está em src="..." ou em ![...](...).
+          # Links de texto (LinkedIn, X) ficam de fora — um perfil
+          # social a responder 302 ou 999 não é defeito nenhum.
+          urls=$(grep -oE '(src="|\]\()https?://[^")]+' README.md \
+                 | sed -E 's/^(src="|\]\()//' | sort -u)
+
+          for u in $urls; do
+            corpo=$(mktemp)
+            codigo=$(curl -sSL --max-time 25 -A 'readme-check' -w '%{http_code}' -o "$corpo" "$u" || echo 000)
+            tamanho=$(wc -c < "$corpo" | tr -d ' ')
+            motivo=""
+
+            [ "$codigo" = "200" ] || motivo="HTTP $codigo"
+
+            # As caixas de erro do github-readme-stats chegam com 200 e
+            # cara de SVG. O que as denuncia é o texto lá dentro.
+            if [ -z "$motivo" ] && grep -qiE 'something went wrong|maximum retries|could not fetch|invalid username|no response' "$corpo"; then
+              motivo="devolveu um cartão de erro"
+            fi
+
+            # Uma imagem servida vazia também responde 200.
+            if [ -z "$motivo" ] && [ "$tamanho" -lt 100 ]; then
+              motivo="só ${tamanho}B — veio vazia"
+            fi
+
+            if [ -n "$motivo" ]; then
+              printf '  ✗ %s\n      %s\n' "$motivo" "$u"
+              falhas=$((falhas + 1))
+            else
+              printf '  ✓ %7sB  %s\n' "$tamanho" "$u"
+            fi
+            rm -f "$corpo"
+          done
+
+          echo ""
+          if [ "$falhas" -gt 0 ]; then
+            echo "### ✗ $falhas imagem(ns) do README não estão a aparecer" >> "$GITHUB_STEP_SUMMARY"
+            echo "$falhas imagem(ns) do README não estão a aparecer como devem."
+            exit 1
+          fi
+          echo "### ✓ Todas as imagens do README aparecem" >> "$GITHUB_STEP_SUMMARY"
+          echo "Todas as imagens do README aparecem ✓"

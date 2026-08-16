@@ -23,35 +23,31 @@ import { readFile, mkdir, writeFile } from 'node:fs/promises';
 
 const SAIDA = process.argv[2] || 'dist';
 const ICONES = JSON.parse(await readFile('.github/assets/icones.json', 'utf8'));
+/* Larguras MEDIDAS dos rótulos, no corpo em que são desenhados.
+   Antes calculava-se 7,3px por carácter, e um M é três vezes mais largo
+   que um I: o PROMETHEUS saía 16,7px fora da tile. Uma tabela por
+   carácter também não chega — a 11px o navegador arredonda o avanço de
+   cada glifo e a escala fica sempre curta. Só medir o rótulo inteiro
+   acerta. Regenera-se com .github/scripts/medir-rotulos.mjs. */
+const LARGURAS = JSON.parse(await readFile('.github/assets/larguras-rotulos.json', 'utf8'));
 
 const LETRA = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif";
 const PAINEL = '#17151A';
 const PAINEL2 = '#241E28';
 const CINZA = '#9C93A6';
 
-const GRUPOS = [
-  ['Linguagens e front', ['Java', 'Python', 'JavaScript', 'React', 'HTML5', 'CSS3']],
-  ['Backend e integração', ['Quarkus', 'Spring', 'Apache Kafka']],
-  ['Dados', ['Oracle', 'Cassandra', 'OpenSearch', 'Postgres', 'MariaDB', 'MicrosoftSQLServer', 'MongoDB', 'SQLite']],
-  ['Plataforma e entrega', ['Kubernetes', 'OpenShift', 'Docker', 'Jenkins']],
-  ['Nuvem', ['AWS', 'Azure', 'Google Cloud', 'Heroku', 'Netlify']],
-  ['Código e ferramentas', ['Git', 'GitHub', 'GitLab', 'Bitbucket', 'Postman', 'Jira', 'Confluence', 'Figma', 'Visual Studio Code']],
-];
-
-/* Nomes que o rótulo do badge trazia mal escritos ou colados. */
-const ROTULOS = {
-  MicrosoftSQLServer: 'SQL Server',
-  'Visual Studio Code': 'VS Code',
-  'Apache Kafka': 'Kafka',
-  Postgres: 'PostgreSQL',
-  'Google Cloud': 'Google Cloud',
-};
+/* Os grupos e os rótulos vivem em .github/assets/stack.json e não
+   aqui: o medir-rotulos.mjs precisa da MESMA lista, e escrita em dois
+   sítios acabaria com uma tecnologia acrescentada num deles e por
+   medir no outro — que é exactamente o defeito que a tabela de
+   larguras veio corrigir. */
+const { GRUPOS, ROTULOS } = JSON.parse(await readFile('.github/assets/stack.json', 'utf8'));
 
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) =>
   ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
-/* Texto branco não serve em cima de tudo. O amarelo do AWS ou o verde
-   do MongoDB pedem tinta escura, senão o rótulo desaparece dentro da
+/* Texto branco não serve em cima de tudo. O amarelo do AWS ou o ciano
+   do Jaeger pedem tinta escura, senão o rótulo desaparece dentro da
    própria tile — é o defeito que se vê em metade dos perfis do GitHub.
    A conta é a luminância relativa da WCAG, a mesma do contraste. */
 function tintaSobre(hex) {
@@ -84,10 +80,14 @@ for (const [grupo, itens] of GRUPOS) {
     const rotulo = (ROTULOS[chave] || d.nome || chave).toUpperCase();
     const temIcone = Boolean(d.path);
 
-    /* 7,3px por carácter a 11px, maiúsculas, com 1px de espaçamento.
-       Sobra de propósito: uma tile larga a mais não se nota, um rótulo
-       cortado nota-se sempre. */
-    const larguraTexto = rotulo.length * 7.3;
+    /* Medido, não estimado. Se faltar na tabela — alguém acrescentou
+       uma tecnologia e não correu o medir-rotulos.mjs — cai numa
+       estimativa com 12% de folga: uma tile larga a mais não se nota,
+       um rótulo cortado nota-se sempre. */
+    const larguraTexto = LARGURAS[rotulo] ?? rotulo.length * 8.2;
+    if (LARGURAS[rotulo] === undefined) {
+      console.warn(`  ⚠ "${rotulo}" não está medido — corre medir-rotulos.mjs`);
+    }
     const w = Math.round(12 + (temIcone ? ICO + 7 : 0) + larguraTexto + 12);
 
     if (x > PAD && x + w > PAD + UTIL) { x = PAD; y += ALT + ESP; }

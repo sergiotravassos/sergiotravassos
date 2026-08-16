@@ -1,0 +1,87 @@
+{
+ "GRUPOS": [
+  [
+   "Linguagens e front",
+   [
+    "Java",
+    "Python",
+    "JavaScript",
+    "React",
+    "HTML5",
+    "CSS3"
+   ]
+  ],
+  [
+   "Backend e integração",
+   [
+    "Quarkus",
+    "Spring",
+    "Apache Kafka"
+   ]
+  ],
+  [
+   "Dados",
+   [
+    "Oracle",
+    "Cassandra",
+    "OpenSearch",
+    "Postgres",
+    "MariaDB",
+    "MicrosoftSQLServer",
+    "MongoDB",
+    "SQLite"
+   ]
+  ],
+  [
+   "Plataforma e entrega",
+   [
+    "Kubernetes",
+    "OpenShift",
+    "Docker",
+    "Argo CD",
+    "Jenkins"
+   ]
+  ],
+  [
+   "Observabilidade",
+   [
+    "Grafana",
+    "Prometheus",
+    "Jaeger"
+   ]
+  ],
+  [
+   "Nuvem",
+   [
+    "AWS",
+    "Azure",
+    "Google Cloud",
+    "Heroku",
+    "Netlify"
+   ]
+  ],
+  [
+   "Código e ferramentas",
+   [
+    "Git",
+    "GitHub",
+    "GitLab",
+    "Bitbucket",
+    "IntelliJ IDEA",
+    "Visual Studio Code",
+    "Postman",
+    "Jira",
+    "Confluence",
+    "Figma"
+   ]
+  ]
+ ],
+ "ROTULOS": {
+  "MicrosoftSQLServer": "SQL Server",
+  "Visual Studio Code": "VS Code",
+  "Apache Kafka": "Kafka",
+  "Postgres": "PostgreSQL",
+  "Google Cloud": "Google Cloud",
+  "IntelliJ IDEA": "IntelliJ IDEA"
+ }
+}

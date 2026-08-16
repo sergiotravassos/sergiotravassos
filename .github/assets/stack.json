@@ -51,6 +51,7 @@
     "Kubernetes",
     "OpenShift",
     "Docker",
+    "Podman",
     "Argo CD",
     "Jenkins"
    ]

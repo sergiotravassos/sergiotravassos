@@ -8,6 +8,8 @@
  "QUARKUS": 63.6,
  "SPRING": 49.2,
  "KAFKA": 43.6,
+ "ANTHROPIC": 77.3,
+ "LLM": 26.3,
  "ORACLE": 51.9,
  "CASSANDRA": 80.8,
  "OPENSEARCH": 88.7,

@@ -1,11 +1,16 @@
 {
  "GRUPOS": [
   [
-   "Linguagens e front",
+   "Linguagens",
    [
     "Java",
     "Python",
-    "JavaScript",
+    "JavaScript"
+   ]
+  ],
+  [
+   "Front",
+   [
     "React",
     "HTML5",
     "CSS3"

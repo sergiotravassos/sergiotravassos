@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="180"
+     viewBox="0 0 900 180" role="img"
+     aria-label="Linguagens de Sérgio Figueirêdo por volume de código">
+  <title>Linguagens de Sérgio Figueirêdo</title>
+  <defs>
+    <!-- Arredonda as DUAS pontas da barra. Um rx na primeira fatia só
+         arredondava a esquerda, e a direita ficava em esquadria. -->
+    <clipPath id="barra">
+      <rect x="0" y="74" width="850" height="10" rx="5"/>
+    </clipPath>
+  </defs>
+  <rect x="0.5" y="0.5" width="899" height="179" rx="10"
+        fill="#0d1117" stroke="#30363d"/>
+  <g transform="translate(25, 0)">
+    <text x="0" y="38" fill="#e6edf3" font-size="16" font-weight="600"
+          font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif">Onde o código passa o tempo</text>
+    <text x="0" y="58" fill="#8b949e" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif">667 contribuições no último ano  ·  18 repositórios  ·  no GitHub há 13 anos</text>
+    <g clip-path="url(#barra)">
+      <rect x="0" y="74" width="850" height="10" fill="#21262d"/>
+      <rect x="0.0" y="74" width="652.3" height="10"
+      fill="#b07219"/>
+      <rect x="652.3" y="74" width="75.2" height="10"
+      fill="#844FBA"/>
+      <rect x="727.5" y="74" width="53.7" height="10"
+      fill="#3572A5"/>
+      <rect x="781.2" y="74" width="35.8" height="10"
+      fill="#89e051"/>
+      <rect x="816.9" y="74" width="10.6" height="10"
+      fill="#427819"/>
+      <rect x="827.5" y="74" width="8.9" height="10"
+      fill="#3178c6"/>
+      <rect x="836.4" y="74" width="13.6" height="10"
+      fill="#8b949e"/>
+    </g>
+    <g>
+      <g transform="translate(0.0, 112)">
+        <circle cx="6" cy="-4" r="6" fill="#b07219"/>
+        <text x="20" y="0" fill="#e6edf3" font-size="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif">Java</text>
+        <text x="269.3" y="0" fill="#8b949e" font-size="13"
+              font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif" text-anchor="end">76.7%</text>
+      </g>
+      <g transform="translate(283.3, 112)">
+        <circle cx="6" cy="-4" r="6" fill="#844FBA"/>
+        <text x="20" y="0" fill="#e6edf3" font-size="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif">HCL</text>
+        <text x="269.3" y="0" fill="#8b949e" font-size="13"
+              font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif" text-anchor="end">8.8%</text>
+      </g>
+      <g transform="translate(566.7, 112)">
+        <circle cx="6" cy="-4" r="6" fill="#3572A5"/>
+        <text x="20" y="0" fill="#e6edf3" font-size="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif">Python</text>
+        <text x="269.3" y="0" fill="#8b949e" font-size="13"
+              font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif" text-anchor="end">6.3%</text>
+      </g>
+      <g transform="translate(0.0, 135)">
+        <circle cx="6" cy="-4" r="6" fill="#89e051"/>
+        <text x="20" y="0" fill="#e6edf3" font-size="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif">Shell</text>
+        <text x="269.3" y="0" fill="#8b949e" font-size="13"
+              font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif" text-anchor="end">4.2%</text>
+      </g>
+      <g transform="translate(283.3, 135)">
+        <circle cx="6" cy="-4" r="6" fill="#427819"/>
+        <text x="20" y="0" fill="#e6edf3" font-size="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif">Makefile</text>
+        <text x="269.3" y="0" fill="#8b949e" font-size="13"
+              font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif" text-anchor="end">1.2%</text>
+      </g>
+      <g transform="translate(566.7, 135)">
+        <circle cx="6" cy="-4" r="6" fill="#3178c6"/>
+        <text x="20" y="0" fill="#e6edf3" font-size="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif">TypeScript</text>
+        <text x="269.3" y="0" fill="#8b949e" font-size="13"
+              font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif" text-anchor="end">1.1%</text>
+      </g>
+      <g transform="translate(0.0, 158)">
+        <circle cx="6" cy="-4" r="6" fill="#8b949e"/>
+        <text x="20" y="0" fill="#e6edf3" font-size="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif">Outras</text>
+        <text x="269.3" y="0" fill="#8b949e" font-size="13"
+              font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif" text-anchor="end">1.6%</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="144"
+     viewBox="0 0 900 144" role="img"
+     aria-label="Red Hat: Certified Specialist in API Management, 2024 · válida até 2027. Anthropic: AI Fluency Framework &amp; Foundations · Claude 101 · Claude Code in Action, 2026. Também: Cloud Fundamentals, Administration and Solution Architect (FIAP) e Java Spring (DevSuperior).">
+  <title>Certificações</title>
+  <defs>
+    <linearGradient id="pc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#241E28"/><stop offset="1" stop-color="#17151A"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="144" rx="14" fill="url(#pc)"/>
+  <g transform="translate(22,22)">
+    <rect width="98" height="30" rx="6" fill="#EE0000"/>
+    <g transform="translate(12,7) scale(0.6667) translate(0,0)">
+      <path d="M16.009 13.386c1.577 0 3.86-.326 3.86-2.202a1.765 1.765 0 0 0-.04-.431l-.94-4.08c-.216-.898-.406-1.305-1.982-2.093-1.223-.625-3.888-1.658-4.676-1.658-.733 0-.947.946-1.822.946-.842 0-1.467-.706-2.255-.706-.757 0-1.25.515-1.63 1.576 0 0-1.06 2.99-1.197 3.424a.81.81 0 0 0-.028.245c0 1.162 4.577 4.974 10.71 4.974m4.101-1.435c.218 1.032.218 1.14.218 1.277 0 1.765-1.984 2.745-4.593 2.745-5.895.004-11.06-3.451-11.06-5.734a2.326 2.326 0 0 1 .19-.925C2.746 9.415 0 9.794 0 12.217c0 3.969 9.405 8.861 16.851 8.861 5.71 0 7.149-2.582 7.149-4.62 0-1.605-1.387-3.425-3.887-4.512" fill="#FFFFFF"/>
+    </g>
+    <text x="35" y="19.5" font-size="11" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif"
+          letter-spacing="1" fill="#FFFFFF">RED HAT</text>
+    <text x="131" y="14" font-size="13.5" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif"
+          fill="#FFFFFF">Certified Specialist in API Management</text>
+    <text x="131" y="29" font-size="11.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif"
+          fill="#B9AEC4">2024 · válida até 2027</text>
+  </g>
+  <g transform="translate(22,70)">
+    <rect width="113" height="30" rx="6" fill="#191919"/>
+    <g transform="translate(12,7) scale(0.6667) translate(0,0)">
+      <path d="M17.3041 3.541h-3.6718l6.696 16.918H24Zm-10.6082 0L0 20.459h3.7442l1.3693-3.5527h7.0052l1.3693 3.5528h3.7442L10.5363 3.5409Zm-.3712 10.2232 2.2914-5.9456 2.2914 5.9456Z" fill="#FFFFFF"/>
+    </g>
+    <text x="35" y="19.5" font-size="11" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif"
+          letter-spacing="1" fill="#FFFFFF">ANTHROPIC</text>
+    <text x="131" y="14" font-size="13.5" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif"
+          fill="#FFFFFF">AI Fluency Framework &amp; Foundations · Claude 101 · Claude Code in Action</text>
+    <text x="131" y="29" font-size="11.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif"
+          fill="#B9AEC4">2026</text>
+  </g>
+  <text x="22" y="132" font-size="11.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif"
+        fill="#B9AEC4">Também: Cloud Fundamentals, Administration and Solution Architect (FIAP) e Java Spring (DevSuperior).</text>
+</svg>

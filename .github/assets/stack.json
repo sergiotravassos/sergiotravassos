@@ -4,9 +4,21 @@
    "Linguagens",
    [
     "Java",
+    "Kotlin",
+    "Swift",
     "Python",
     "JavaScript",
     "TypeScript"
+   ]
+  ],
+  [
+   "Mobile",
+   [
+    "iOS",
+    "SwiftUI",
+    "Android",
+    "Jetpack Compose",
+    "Firebase"
    ]
   ],
   [
@@ -22,7 +34,8 @@
    [
     "Quarkus",
     "Spring",
-    "Apache Kafka"
+    "Apache Kafka",
+    "Kong"
    ]
   ],
   [
@@ -53,12 +66,23 @@
     "Docker",
     "Podman",
     "Argo CD",
+    "Tekton",
     "Jenkins"
+   ]
+  ],
+  [
+   "Infraestrutura como código",
+   [
+    "Proxmox",
+    "OpenTofu",
+    "Ansible",
+    "Packer"
    ]
   ],
   [
    "Observabilidade",
    [
+    "OpenTelemetry",
     "Grafana",
     "Prometheus",
     "Jaeger"
@@ -67,6 +91,7 @@
   [
    "Nuvem",
    [
+    "Cloudflare",
     "AWS",
     "Azure",
     "Google Cloud",
@@ -83,6 +108,7 @@
     "Bitbucket",
     "IntelliJ IDEA",
     "Visual Studio Code",
+    "Xcode",
     "Postman",
     "Jira",
     "Confluence",

@@ -7,7 +7,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)"
             srcset="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/linguagens-escuro.svg">
-    <img height="215" alt="Linguagens, por volume de código nos repositórios públicos"
+    <img height="215" alt="Linguagens, por volume de código em todos os meus repositórios"
          src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/linguagens-claro.svg">
   </picture>
 </p>
@@ -16,10 +16,10 @@
 
 <img alt="O que ando a construir" src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/titulo-projetos.svg"/>
 
-<img alt="esposasliterarias.com, no ar — site de um clube de leitura sem build. dotfiles — a máquina de trabalho versionada. Red Hat AD221, DO288 e DO180 — integração cloud-native e OpenShift."
+<img alt="Esposas Literárias, no ar — a plataforma de um clube de leitura: Worker de Cloudflare sobre D1, app nativa de iPhone, app nativa de Android e app web. homelab — Proxmox com infraestrutura como código, OpenShift, Kafka e GitOps. Red Hat AD221, DO288 e DO180 — integração cloud-native e OpenShift."
      src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/projetos.svg"/>
 
-[esposasliterarias.com](https://esposasliterarias.com) · [dotfiles](https://github.com/sergiotravassos/dotfiles) · [AD221](https://github.com/sergiotravassos/AD221-apps) · [DO288](https://github.com/sergiotravassos/DO288-apps) · [DO180](https://github.com/sergiotravassos/DO180-apps)
+[esposasliterarias.com](https://esposasliterarias.com) · [homelab](https://github.com/sergiotravassos/homelab) · [AD221](https://github.com/sergiotravassos/AD221-apps) · [DO288](https://github.com/sergiotravassos/DO288-apps) · [DO180](https://github.com/sergiotravassos/DO180-apps)
 
 > O grosso do que construo é arquitetura de microserviços para sistemas internos, e vive em
 > GitLab fechado. O que está aqui é o que posso mostrar.

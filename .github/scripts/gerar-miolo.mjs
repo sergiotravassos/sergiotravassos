@@ -99,14 +99,14 @@ function titulo(texto) {
 
 const CARTOES = [
   {
-    cor: '#C9A227', titulo: 'esposasliterarias.com', etiqueta: 'NO AR',
-    texto: 'Site de um clube de leitura. Sem build: HTML, CSS e JS puro, copiados tal e qual. Publica sozinho na Cloudflare e só sobe se passar em quatro conferências.',
-    chips: ['HTML', 'CSS', 'JS', 'Cloudflare', 'Apps Script'],
+    cor: '#C9A227', titulo: 'Esposas Literárias', etiqueta: 'NO AR',
+    texto: 'A plataforma de um clube de leitura com mais de 400 leitoras. Um Worker de Cloudflare sobre D1, e três apps que o consomem: iPhone nativo, Android nativo e a app web.',
+    chips: ['Swift', 'Kotlin', 'JS', 'Cloudflare'],
   },
   {
-    cor: '#89E051', titulo: 'dotfiles', etiqueta: 'PÚBLICO',
-    texto: 'A máquina de trabalho, versionada. Um clone e o ambiente volta ao sítio.',
-    chips: ['Shell', 'macOS'],
+    cor: '#844FBA', titulo: 'homelab', etiqueta: 'PÚBLICO',
+    texto: 'Um nó Proxmox, tudo em Git: OpenShift SNO, Kafka, GPU em passthrough, VLANs e GitOps. Se uma máquina não se recria do repositório, não conta.',
+    chips: ['Proxmox', 'OpenTofu', 'Ansible'],
   },
   {
     cor: '#EE0000', titulo: 'Red Hat · AD221 · DO288 · DO180', etiqueta: 'LABS',

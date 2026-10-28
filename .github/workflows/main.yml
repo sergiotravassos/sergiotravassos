@@ -64,10 +64,16 @@ jobs:
       - name: Desenhar a stack
         run: node .github/scripts/gerar-stack.mjs dist
 
+      # O GITHUB_TOKEN das Actions só vê repositórios públicos, e o
+      # Swift e o Kotlin vivem no esposas-literarias, que é privado.
+      # O PERFIL_TOKEN é um fine-grained só com Metadata: leitura, em
+      # todos os repositórios — dá os bytes por linguagem e mais nada.
+      # O cartão só mostra totais, nunca nomes de repositórios.
+      # Sem o segredo, cai no GITHUB_TOKEN e conta só os públicos.
       - name: Gerar o cartão das linguagens
         run: node .github/scripts/gerar-cartoes.mjs "${{ github.repository_owner }}" dist
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERFIL_TOKEN || secrets.GITHUB_TOKEN }}
 
       # ── a cobrinha ──
       # Duas versões, clara e escura: o README escolhe com <picture>,

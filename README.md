@@ -1,61 +1,61 @@
 <p>
   <img alt="Sérgio Travassos — Principal Engineer na Timestamp, Lisboa. Java, Quarkus, Kafka, OpenShift, Kubernetes, LLM."
-       src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/banner.svg"/>
+       src="https://raw.githubusercontent.com/sergio-figueiredo/sergio-figueiredo/output/banner.svg"/>
 </p>
 
 <p>
   <picture>
     <source media="(prefers-color-scheme: dark)"
-            srcset="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/linguagens-escuro.svg">
+            srcset="https://raw.githubusercontent.com/sergio-figueiredo/sergio-figueiredo/output/linguagens-escuro.svg">
     <img height="215" alt="Linguagens, por volume de código em todos os meus repositórios"
-         src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/linguagens-claro.svg">
+         src="https://raw.githubusercontent.com/sergio-figueiredo/sergio-figueiredo/output/linguagens-claro.svg">
   </picture>
 </p>
 
 ---
 
-<img alt="O que ando a construir" src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/titulo-projetos.svg"/>
+<img alt="O que ando a construir" src="https://raw.githubusercontent.com/sergio-figueiredo/sergio-figueiredo/output/titulo-projetos.svg"/>
 
 <img alt="Esposas Literárias, no ar — a plataforma de um clube de leitura: Worker de Cloudflare sobre D1, app nativa de iPhone, app nativa de Android e app web. homelab — Proxmox com infraestrutura como código, OpenShift, Kafka e GitOps. Red Hat AD221, DO288 e DO180 — integração cloud-native e OpenShift."
-     src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/projetos.svg"/>
+     src="https://raw.githubusercontent.com/sergio-figueiredo/sergio-figueiredo/output/projetos.svg"/>
 
-[esposasliterarias.com](https://esposasliterarias.com) · [homelab](https://github.com/sergiotravassos/homelab) · [AD221](https://github.com/sergiotravassos/AD221-apps) · [DO288](https://github.com/sergiotravassos/DO288-apps) · [DO180](https://github.com/sergiotravassos/DO180-apps)
+[esposasliterarias.com](https://esposasliterarias.com) · [homelab](https://github.com/sergio-figueiredo/homelab) · [AD221](https://github.com/sergio-figueiredo/AD221-apps) · [DO288](https://github.com/sergio-figueiredo/DO288-apps) · [DO180](https://github.com/sergio-figueiredo/DO180-apps)
 
 > O grosso do que construo é arquitetura de microserviços para sistemas internos, e vive em
 > GitLab fechado. O que está aqui é o que posso mostrar.
 
 ---
 
-<img alt="Certificações" src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/titulo-certificacoes.svg"/>
+<img alt="Certificações" src="https://raw.githubusercontent.com/sergio-figueiredo/sergio-figueiredo/output/titulo-certificacoes.svg"/>
 
 <img alt="Red Hat Certified Specialist in API Management, 2024, válida até 2027. Anthropic: AI Fluency Framework and Foundations, Claude 101, Claude Code in Action, 2026. Também Cloud Fundamentals da FIAP e Java Spring da DevSuperior."
-     src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/certificacoes.svg"/>
+     src="https://raw.githubusercontent.com/sergio-figueiredo/sergio-figueiredo/output/certificacoes.svg"/>
 
 ---
 
-<img alt="Stack" src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/titulo-stack.svg"/>
+<img alt="Stack" src="https://raw.githubusercontent.com/sergio-figueiredo/sergio-figueiredo/output/titulo-stack.svg"/>
 
 <p>
   <img alt="Stack: linguagens e front, backend e integração, dados, plataforma e entrega, nuvem, código e ferramentas"
-       src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/stack.svg"/>
+       src="https://raw.githubusercontent.com/sergio-figueiredo/sergio-figueiredo/output/stack.svg"/>
 </p>
 
 ---
 
 <picture>
   <source media="(prefers-color-scheme: dark)"
-          srcset="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/snake-escuro.svg">
+          srcset="https://raw.githubusercontent.com/sergio-figueiredo/sergio-figueiredo/output/snake-escuro.svg">
   <img alt="A cobrinha a comer o gráfico de contribuições"
-       src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/snake-claro.svg">
+       src="https://raw.githubusercontent.com/sergio-figueiredo/sergio-figueiredo/output/snake-claro.svg">
 </picture>
 
 ---
 
-<img alt="Onde me encontrar" src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/titulo-contacto.svg"/>
+<img alt="Onde me encontrar" src="https://raw.githubusercontent.com/sergio-figueiredo/sergio-figueiredo/output/titulo-contacto.svg"/>
 
 <a href="https://www.linkedin.com/in/sergiotfigueiredo/" target="_blank"><img
-   alt="LinkedIn — sergiotfigueiredo" src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/contacto-linkedin.svg"/></a>
+   alt="LinkedIn — sergiotfigueiredo" src="https://raw.githubusercontent.com/sergio-figueiredo/sergio-figueiredo/output/contacto-linkedin.svg"/></a>
 <a href="https://twitter.com/sergiortf" target="_blank"><img
-   alt="X — sergiortf" src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/contacto-x.svg"/></a>
+   alt="X — sergiortf" src="https://raw.githubusercontent.com/sergio-figueiredo/sergio-figueiredo/output/contacto-x.svg"/></a>
 <a href="https://www.instagram.com/sergiotravassos/" target="_blank"><img
-   alt="Instagram — sergiotravassos" src="https://raw.githubusercontent.com/sergiotravassos/sergiotravassos/output/contacto-instagram.svg"/></a>
+   alt="Instagram — sergiotravassos" src="https://raw.githubusercontent.com/sergio-figueiredo/sergio-figueiredo/output/contacto-instagram.svg"/></a>

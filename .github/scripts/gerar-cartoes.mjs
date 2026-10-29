@@ -18,7 +18,7 @@
  *  Precisa de GITHUB_TOKEN no ambiente — nas Actions vem de graça.
  * ═══════════════════════════════════════════════════════════════ */
 
-const UTILIZADOR = process.argv[2] || 'sergiotravassos';
+const UTILIZADOR = process.argv[2] || 'sergio-figueiredo';
 const SAIDA = process.argv[3] || 'dist';
 const TOKEN = process.env.GITHUB_TOKEN;
 

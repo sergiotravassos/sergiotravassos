@@ -34,7 +34,7 @@ concurrency:
 jobs:
   perfil:
     # Um fork não deve gastar execuções nem tentar escrever no branch.
-    if: github.repository_owner == 'sergiotravassos'
+    if: github.repository_owner == 'sergio-figueiredo'
     runs-on: ubuntu-latest
 
     steps:

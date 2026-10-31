@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="198"
+     viewBox="0 0 900 198" role="img"
+     aria-label="Esposas Literárias: A plataforma de um clube de leitura com mais de 400 leitoras. Um Worker de Cloudflare sobre D1, e três apps que o consomem: iPhone nativo, Android nativo e a app web. homelab: Um nó Proxmox, tudo em Git: OpenShift SNO, Kafka, GPU em passthrough, VLANs e GitOps. Se uma máquina não se recria do repositório, não conta. Red Hat · AD221 · DO288 · DO180: Integração cloud-native com Red Hat Fuse, e as aplicações dos cursos de OpenShift.">
+  <title>Projetos</title>
+  <defs>
+    <clipPath id="m0"><rect width="288" height="198" rx="12"/></clipPath>
+    <clipPath id="m1"><rect width="288" height="198" rx="12"/></clipPath>
+    <clipPath id="m2"><rect width="288" height="198" rx="12"/></clipPath>
+  </defs>
+  <g transform="translate(0,0)">
+    <g clip-path="url(#m0)">
+      <rect width="288" height="198" fill="#17151A"/>
+      <rect width="288" height="4" fill="#C9A227"/>
+      <circle cx="258" cy="174" r="70" fill="#C9A227" fill-opacity="0.05"/>
+    </g>
+    <rect x="0.5" y="0.5" width="287" height="197" rx="12"
+          fill="none" stroke="#C9A227" stroke-opacity="0.28"/>
+    <g transform="translate(18,0)">
+      <rect x="0" y="22" width="48" height="17" rx="4"
+            fill="#C9A227" fill-opacity="0.16"/>
+      <text x="24" y="34" font-size="9" font-weight="700"
+            font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif" fill="#C9A227" letter-spacing="0.6"
+            text-anchor="middle">NO AR</text>
+      <text x="0" y="62" font-size="14.5" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif"
+            fill="#FFFFFF">Esposas Literárias</text>
+      <text x="0" y="86" font-size="11.5"
+            font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif" fill="#B9AEC4">A plataforma de um clube de leitura com mais</text>
+      <text x="0" y="103" font-size="11.5"
+            font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif" fill="#B9AEC4">de 400 leitoras. Um Worker de Cloudflare</text>
+      <text x="0" y="120" font-size="11.5"
+            font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif" fill="#B9AEC4">sobre D1, e três apps que o consomem: iPhone</text>
+      <text x="0" y="137" font-size="11.5"
+            font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif" fill="#B9AEC4">nativo, Android nativo e a app web.</text>
+      <g transform="translate(0,164)">
+        <g transform="translate(0,0)">
+          <rect width="49" height="20" rx="10" fill="#C9A227" fill-opacity="0.13"/>
+          <text x="24.5" y="13.5" font-size="10" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif"
+                fill="#C9A227" text-anchor="middle">Swift</text>
+        </g>
+        <g transform="translate(55,0)">
+          <rect width="55" height="20" rx="10" fill="#C9A227" fill-opacity="0.13"/>
+          <text x="27.5" y="13.5" font-size="10" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif"
+                fill="#C9A227" text-anchor="middle">Kotlin</text>
+        </g>
+        <g transform="translate(116,0)">
+          <rect width="30" height="20" rx="10" fill="#C9A227" fill-opacity="0.13"/>
+          <text x="15" y="13.5" font-size="10" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif"
+                fill="#C9A227" text-anchor="middle">JS</text>
+        </g>
+        <g transform="translate(152,0)">
+          <rect width="79" height="20" rx="10" fill="#C9A227" fill-opacity="0.13"/>
+          <text x="39.5" y="13.5" font-size="10" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif"
+                fill="#C9A227" text-anchor="middle">Cloudflare</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(306,0)">
+    <g clip-path="url(#m1)">
+      <rect width="288" height="198" fill="#17151A"/>
+      <rect width="288" height="4" fill="#844FBA"/>
+      <circle cx="258" cy="174" r="70" fill="#844FBA" fill-opacity="0.05"/>
+    </g>
+    <rect x="0.5" y="0.5" width="287" height="197" rx="12"
+          fill="none" stroke="#844FBA" stroke-opacity="0.28"/>
+    <g transform="translate(18,0)">
+      <rect x="0" y="22" width="60.800000000000004" height="17" rx="4"
+            fill="#844FBA" fill-opacity="0.16"/>
+      <text x="30.400000000000002" y="34" font-size="9" font-weight="700"
+            font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif" fill="#844FBA" letter-spacing="0.6"
+            text-anchor="middle">PÚBLICO</text>
+      <text x="0" y="62" font-size="14.5" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif"
+            fill="#FFFFFF">homelab</text>
+      <text x="0" y="86" font-size="11.5"
+            font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif" fill="#B9AEC4">Um nó Proxmox, tudo em Git: OpenShift SNO,</text>
+      <text x="0" y="103" font-size="11.5"
+            font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif" fill="#B9AEC4">Kafka, GPU em passthrough, VLANs e GitOps. Se</text>
+      <text x="0" y="120" font-size="11.5"
+            font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif" fill="#B9AEC4">uma máquina não se recria do repositório, não</text>
+      <text x="0" y="137" font-size="11.5"
+            font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif" fill="#B9AEC4">conta.</text>
+      <g transform="translate(0,164)">
+        <g transform="translate(0,0)">
+          <rect width="61" height="20" rx="10" fill="#844FBA" fill-opacity="0.13"/>
+          <text x="30.5" y="13.5" font-size="10" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif"
+                fill="#844FBA" text-anchor="middle">Proxmox</text>
+        </g>
+        <g transform="translate(67,0)">
+          <rect width="67" height="20" rx="10" fill="#844FBA" fill-opacity="0.13"/>
+          <text x="33.5" y="13.5" font-size="10" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif"
+                fill="#844FBA" text-anchor="middle">OpenTofu</text>
+        </g>
+        <g transform="translate(140,0)">
+          <rect width="61" height="20" rx="10" fill="#844FBA" fill-opacity="0.13"/>
+          <text x="30.5" y="13.5" font-size="10" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif"
+                fill="#844FBA" text-anchor="middle">Ansible</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(612,0)">
+    <g clip-path="url(#m2)">
+      <rect width="288" height="198" fill="#17151A"/>
+      <rect width="288" height="4" fill="#EE0000"/>
+      <circle cx="258" cy="174" r="70" fill="#EE0000" fill-opacity="0.05"/>
+    </g>
+    <rect x="0.5" y="0.5" width="287" height="197" rx="12"
+          fill="none" stroke="#EE0000" stroke-opacity="0.28"/>
+    <g transform="translate(18,0)">
+      <rect x="0" y="22" width="41.6" height="17" rx="4"
+            fill="#EE0000" fill-opacity="0.16"/>
+      <text x="20.8" y="34" font-size="9" font-weight="700"
+            font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif" fill="#EE0000" letter-spacing="0.6"
+            text-anchor="middle">LABS</text>
+      <text x="0" y="62" font-size="14.5" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif"
+            fill="#FFFFFF">Red Hat · AD221 · DO288 · DO180</text>
+      <text x="0" y="86" font-size="11.5"
+            font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif" fill="#B9AEC4">Integração cloud-native com Red Hat Fuse, e</text>
+      <text x="0" y="103" font-size="11.5"
+            font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif" fill="#B9AEC4">as aplicações dos cursos de OpenShift.</text>
+      <g transform="translate(0,164)">
+        <g transform="translate(0,0)">
+          <rect width="42" height="20" rx="10" fill="#EE0000" fill-opacity="0.13"/>
+          <text x="21" y="13.5" font-size="10" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif"
+                fill="#EE0000" text-anchor="middle">Fuse</text>
+        </g>
+        <g transform="translate(48,0)">
+          <rect width="73" height="20" rx="10" fill="#EE0000" fill-opacity="0.13"/>
+          <text x="36.5" y="13.5" font-size="10" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif"
+                fill="#EE0000" text-anchor="middle">OpenShift</text>
+        </g>
+        <g transform="translate(127,0)">
+          <rect width="49" height="20" rx="10" fill="#EE0000" fill-opacity="0.13"/>
+          <text x="24.5" y="13.5" font-size="10" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif"
+                fill="#EE0000" text-anchor="middle">Camel</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
